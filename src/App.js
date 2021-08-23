@@ -31,7 +31,14 @@ function App() {
       </header>
 
       <section className='content p-40'>
-        <h1 className='mb-40'>Все кроссовки</h1>
+        <div className='d-flex justify-between align-center mb-40'>
+          <h1>Все кроссовки</h1>
+
+          <div className='d-flex search-block'>
+            <img src='/img/search.svg' alt='Иконка поиска' />
+            <input type='text' placeholder='Поиск...' />
+          </div>
+        </div>
         <div className='d-flex'>
           <div className='card'>
             <img
@@ -57,6 +64,9 @@ function App() {
             </div>
           </div>
           <div className='card'>
+            <div className='btn-favorite'>
+              <img src='/img/heart-unliked.svg' alt='unliked' />
+            </div>
             <img
               width={133}
               height={112}
